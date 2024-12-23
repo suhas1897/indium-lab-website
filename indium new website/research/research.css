@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+
+
+.banner {
+    background: url('lab-banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    color: #004d40;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+.card-container {
+    display: flex; /* Flexbox layout */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 20px; /* Space between the cards */
+    justify-content: center; /* Center the cards horizontally */
+    padding: 20px; /* Add padding around the container */
+}
+
+.card {
+    background-color: #004d40;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px; /* Fixed width for consistency */
+    text-align: justify;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #d1d1d1;
+    text-align: justify;
+}
+
+.card img {
+    width: 100%; /* Ensure image fits the card width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add border radius to the image */
+    display: block; /* Removes inline image spacing */
+    margin-bottom: 15px; /* Adds spacing between the image and content */
+}
+
+.tags {
+    margin: 15px 0;
+}
+
+.tags span {
+    background-color: #004d40;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    margin: 0 5px;
+    display: inline-block;
+    color: #fff;
+}
+
+.icon {
+    margin-top: 15px;
+}
+
+.icon img {
+    width: 24px;
+    height: 24px;
+    filter: invert(100%);
+    transition: transform 0.3s;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
+}

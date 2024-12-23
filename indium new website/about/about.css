@@ -1,0 +1,118 @@
+/* people.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+    
+}
+
+
+
+header {
+    background-color: #004d40;
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+  overflow: hidden;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links li a.active {
+    border-bottom: 2px solid #ffd700;
+}
+
+/* .bannerlogo {
+    height: 300px;
+    width: 300%;
+
+} */
+
+.banner {
+    /* background: url('main photo lab.jpg') no-repeat center center/cover; */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.banner-text h1 {
+    font-size: 3em;
+    color: #004d40;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.profile {
+    display: flex;
+    max-width: 1200px;
+    margin: 2em auto;
+    background: #004d40;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    
+    
+}
+
+.profile-photo {
+    flex: 1;
+    text-align: center;
+    filter: brightness(200%), contrast(200%);
+    
+}
+
+.profile-photo img {
+    max-width: 450px;
+    border-radius: 10px;
+    
+}
+.des{
+    line-height: 1.5;
+}
+
+.profile-info {
+    flex: 2;
+    padding: 20px;
+}
+
+.head {
+    font-size: 3em;
+}
+
+.profile-info h2 {
+    margin-top: 0;
+    color: #a58255;
+}
+
+footer {
+    background-color: #004d40;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
