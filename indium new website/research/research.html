@@ -8,17 +8,44 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav role="navigation" class="primary-navigation">
             <div class="logo">
-                <h1>Indium Laboratory</h1>
+                <img src="../images/main logo.png" style="width: 100px; filter: brightness(500%);">
             </div>
-            <ul class="nav-links">
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="/about/about.html">About Us</a></li>
                 <li><a href="/ourleaders/our.html">Our Leaders</a></li>
                 <li><a href="/research/research.html">Research</a></li>
-                <li><a href="/people/People.html">People</a></li>
+                <li class="has-dropdown">
+                    <a href="#">People &dtrif;</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="/people/principal/principal.html">Principal Investigator</a></li>
+                            <li><a href="/people/student/student.html">Student Interns</a></li>
+                            <li><a href="/people/Research Interns/intern.html">Research Interns</a></li>
+                            <li><a href="/people/Research Scholars/scholars.html">Research Scholars</a></li>
+                            <li><a href="/people/Collab/collab.html">Collaborators</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Our Startups &dtrif;</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="/Our Startups/alchemiera/alchemiera.html">Alchemiera</a></li>
+                            <li><a href="/Our Startups/Quallatice/quallatice.html">Quallatice</a></li>
+                        </ul>
+                    </div>
+                </li>
                 <li><a href="/opportunities.html">Opportunities</a></li>
+                <li><a href="/consultancy/consultancy.html">Consultancy Services</a></li>
+                <li><a href="/contact us/contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
@@ -69,8 +96,18 @@
             </div>
         </div>
     </div>
+    <footer>
+        <p>&copy; 2024 Indium Laboratory. All rights reserved.</p>
+    </footer>
     
-
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+    
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
         
    
 </body>
